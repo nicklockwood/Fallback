@@ -1,0 +1,27 @@
+# file options
+
+--exclude Build, Tests/XCTestManifests.swift
+
+# format options
+
+--swiftversion 5.10
+--hexgrouping ignore
+--decimalgrouping ignore
+--ifdef no-indent
+--self init-only
+--shortoptionals except-properties
+--wraparguments before-first
+--wrapcollections before-first
+--wrapconditions after-first
+
+# rules
+
+--lintonly unusedArguments
+--lintonly unusedPrivateDeclarations
+--disable wrapFunctionBodies, wrapPropertyBodies
+--enable isEmpty
+--enable docComments
+--enable noForceTryInTests
+--enable redundantVariable
+--enable redundantEquatable
+--enable redundantMemberwiseInit
